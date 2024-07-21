@@ -5,7 +5,6 @@ ARG BACKEND_API_URL="http://localhost:8000"
 ARG REACT_APP_SOURCES=""
 ARG LLM_MODELS=""
 ARG GOOGLE_CLIENT_ID=""
-ARG BLOOM_URL="https://workspace-preview.neo4j.io/workspace/explore?connectURL={CONNECT_URL}&search=Show+me+a+graph&featureGenAISuggestions=true&featureGenAISuggestionsInternal=true"
 ARG TIME_PER_CHUNK=4
 ARG TIME_PER_PAGE=50
 ARG LARGE_FILE_SIZE=5242880
@@ -22,7 +21,6 @@ RUN BACKEND_API_URL=$BACKEND_API_URL \
     REACT_APP_SOURCES=$REACT_APP_SOURCES \
     LLM_MODELS=$LLM_MODELS \
     GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID \
-    BLOOM_URL=$BLOOM_URL \
     TIME_PER_CHUNK=$TIME_PER_CHUNK \
     CHUNK_SIZE=$CHUNK_SIZE \
     ENV=$ENV \

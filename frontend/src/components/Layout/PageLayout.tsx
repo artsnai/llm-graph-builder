@@ -22,6 +22,9 @@ export default function PageLayoutNew({
   isSettingPanelExpanded: boolean;
   closeSettingModal: () => void;
   openSettingsDialog: () => void;
+  closeOrphanNodeDeletionModal: () => void;
+  showOrphanNodeDeletionModal: boolean;
+  openOrphanNodeDeletionModal: () => void;
 }) {
   const [isLeftExpanded, setIsLeftExpanded] = useState<boolean>(true);
   const [isRightExpanded, setIsRightExpanded] = useState<boolean>(true);
